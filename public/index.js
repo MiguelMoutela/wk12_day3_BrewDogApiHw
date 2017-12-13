@@ -47,10 +47,11 @@ const createName = function(beer){
 }
 const createImage = function(beer){
   const li = document.createElement('li')
+  li.style.listStyle = "none";
   const beerImage = document.createElement('img')
   beerImage.src = beer.image_url;
-  beerImage.style.width = "10px";
-  beerImage.style.height = "50px";
+  beerImage.style.width = "50px";
+  beerImage.style.height = "175px";
   li.appendChild(beerImage);
   return li;
 }
